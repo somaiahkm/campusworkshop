@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/custom.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -116,8 +117,10 @@
                             data-bs-target="#edit-task-modal" data-source="{{item.id}}" data-content="{{item.task}}"><i
                                 class="fa fa-pen fa-1" aria-hidden="true"></i></button></td>
 
-                    <td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{item.id}}"
-                            type="button">Delete</button></td>
+                    <!-- <td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{item.id}}"
+                            type="button">Delete</button></td> -->
+
+                            <td><button style="font-size:24px">B <i class="material-icons">delete</i></button> </td>
                 </tr>
                 {% endfor %}
 
